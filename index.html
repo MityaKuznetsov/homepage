@@ -1,10 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Name Surname</h1>
+            <h3 class="contact-info__sub-header">Self description</h3>
+
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <a
+                  href=""
+                  rel="author"
+                  class="contact-info__item"
+                  id="location"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        d="M 168.30,499.20 C 116.10,435.00 0.00,279.40 0.00,192.00 0.00,85.96 85.96,0.00 192.00,0.00 298.00,0.00 384.00,85.96 384.00,192.00 384.00,279.40 267.00,435.00 215.70,499.20 203.40,514.50 180.60,514.50 168.30,499.20 168.30,499.20 168.30,499.20 168.30,499.20 Z M 192.00,256.00 C 227.30,256.00 256.00,227.30 256.00,192.00 256.00,156.70 227.30,128.00 192.00,128.00 156.70,128.00 128.00,156.70 128.00,192.00 128.00,227.30 156.70,256.00 192.00,256.00 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>location</span>
+                </a>
+                <a
+                  href=""
+                  rel="author"
+                  target="_blank"
+                  class="contact-info__item"
+                  id="linkedin"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img class="contact-info__avatar" src="/" alt="Avatar" />
+              </div>
+              <div class="contact-info__block">
+                <a href="" rel="author" class="contact-info__item" id="email">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M 0.00,128.00 C 0.00,92.65 28.65,64.00 64.00,64.00 64.00,64.00 448.00,64.00 448.00,64.00 483.30,64.00 512.00,92.65 512.00,128.00 512.00,128.00 512.00,384.00 512.00,384.00 512.00,419.30 483.30,448.00 448.00,448.00 448.00,448.00 64.00,448.00 64.00,448.00 28.65,448.00 0.00,419.30 0.00,384.00 0.00,384.00 0.00,128.00 0.00,128.00 Z M 48.00,128.00 C 48.00,128.00 48.00,150.10 48.00,150.10 48.00,150.10 220.50,291.70 220.50,291.70 241.10,308.70 270.90,308.70 291.50,291.70 291.50,291.70 464.00,150.10 464.00,150.10 464.00,150.10 464.00,127.10 464.00,127.10 464.00,119.20 456.80,111.10 448.00,111.10 448.00,111.10 64.00,111.10 64.00,111.10 55.16,111.10 48.00,119.20 48.00,127.10 48.00,127.10 48.00,128.00 48.00,128.00 Z M 48.00,212.20 C 48.00,212.20 48.00,384.00 48.00,384.00 48.00,392.80 55.16,400.00 64.00,400.00 64.00,400.00 448.00,400.00 448.00,400.00 456.80,400.00 464.00,392.80 464.00,384.00 464.00,384.00 464.00,212.20 464.00,212.20 464.00,212.20 322.00,328.80 322.00,328.80 283.60,360.30 228.40,360.30 189.10,328.80 189.10,328.80 48.00,212.20 48.00,212.20 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>email</span>
+                </a>
+                <a
+                  href=""
+                  rel="author"
+                  class="contact-info__item"
+                  id="telephone"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M 511.20,387.00 C 511.20,387.00 487.95,487.80 487.95,487.80 484.68,502.05 472.16,512.02 457.49,512.02 205.20,512.00 0.00,306.80 0.00,54.50 0.00,39.84 9.97,27.30 24.22,24.05 24.22,24.05 125.02,0.80 125.02,0.80 139.70,-2.60 154.70,5.02 160.80,18.92 160.80,18.92 207.32,127.42 207.32,127.42 212.76,140.20 209.09,155.09 198.34,163.87 198.34,163.87 144.50,207.10 144.50,207.10 178.48,276.32 234.76,332.60 304.00,366.60 304.00,366.60 348.08,312.80 348.08,312.80 356.77,302.02 371.77,298.29 384.55,303.82 384.55,303.82 493.05,350.33 493.05,350.33 506.10,357.20 514.60,372.40 511.20,387.00 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>phone number</span>
+                </a>
+                <a
+                  href=""
+                  rel="author"
+                  class="contact-info__item"
+                  id="instagram"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M 224.10,141.00 C 160.50,141.00 109.20,192.30 109.20,255.90 109.20,319.50 160.50,370.80 224.10,370.80 287.70,370.80 339.00,319.50 339.00,255.90 339.00,192.30 287.70,141.00 224.10,141.00 Z M 224.10,330.60 C 183.00,330.60 149.40,297.10 149.40,255.90 149.40,214.70 182.90,181.20 224.10,181.20 265.30,181.20 298.80,214.70 298.80,255.90 298.80,297.10 265.20,330.60 224.10,330.60 224.10,330.60 224.10,330.60 224.10,330.60 Z M 370.50,136.30 C 370.50,151.20 358.50,163.10 343.70,163.10 328.80,163.10 316.90,151.10 316.90,136.30 316.90,121.50 328.90,109.50 343.70,109.50 358.50,109.50 370.50,121.50 370.50,136.30 Z M 446.60,163.50 C 444.90,127.60 436.70,95.80 410.40,69.60 384.20,43.40 352.40,35.20 316.50,33.40 279.50,31.30 168.60,31.30 131.60,33.40 95.80,35.10 64.00,43.30 37.70,69.50 11.40,95.70 3.30,127.50 1.50,163.40 -0.60,200.40 -0.60,311.30 1.50,348.30 3.20,384.20 11.40,416.00 37.70,442.20 64.00,468.40 95.70,476.60 131.60,478.40 168.60,480.50 279.50,480.50 316.50,478.40 352.40,476.70 384.20,468.50 410.40,442.20 436.60,416.00 444.80,384.20 446.60,348.30 448.70,311.30 448.70,200.50 446.60,163.50 446.60,163.50 446.60,163.50 446.60,163.50 Z M 398.80,388.00 C 391.00,407.60 375.90,422.70 356.20,430.60 326.70,442.30 256.70,439.60 224.10,439.60 191.50,439.60 121.40,442.20 92.00,430.60 72.40,422.80 57.30,407.70 49.40,388.00 37.70,358.50 40.40,288.50 40.40,255.90 40.40,223.30 37.80,153.20 49.40,123.80 57.20,104.20 72.30,89.10 92.00,81.20 121.50,69.50 191.50,72.20 224.10,72.20 256.70,72.20 326.80,69.60 356.20,81.20 375.80,89.00 390.90,104.10 398.80,123.80 410.50,153.30 407.80,223.30 407.80,255.90 407.80,288.50 410.50,358.60 398.80,388.00 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="resume__block">
+              <div class="intro">
+                <div class="intro__icon-wrapper">
+                  <svg
+                    class="intro__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="intro_text">
+                  Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT,
+                  Full Stack Evil, all I do is sleep and try to help out hoomans
+                  with their projects whenever they need me.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="resume__block">
+              <div class="timeline">
+                <h3 class="timeline__header">Timeline</h3>
+                <h3 class="timeline__content__mobile">
+                  See this section on desktop
+                </h3>
+                <ul class="timeline__content">
+                  <li
+                    data-year="2017"
+                    data-text="Lorem ipsum dolor sit amet, consectetur."
+                  ></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="resume__block">
+              <div class="skills">
+                <h3 class="skills__header">Skills</h3>
+                <p class="skills__text">
+                  Sleep, eat, more sleep, meow, mrrr, purr.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="resume__block">
+              <div class="main-info fh">
+                <div class="experiences">
+                  <h3 class="experiences__header">Experience</h3>
+                  <div class="experiences__company">
+                    <div class="experiences__company-header">
+                      <span class="experiences__company-header-durability"
+                        >For whole my life</span
+                      >
+                      <h3 class="experiences__company-header-name">
+                        BinaryStudio
+                      </h3>
+                    </div>
+
+                    <div class="experiences__company-project">
+                      <span class="experiences__company-project-role"
+                        >Binary Studio Cat</span
+                      >
+                      <h3 class="experiences__company-project-name">
+                        Hooman project
+                      </h3>
+                      <ul class="experiences__company-project-responsibilities">
+                        <li>Supported hoomans</li>
+                        <li>Slept all the time</li>
+                        <li>Lied on the keyboard</li>
+                        <li>Watched my hoomans working</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-info fv">
+                  <div class="additional-info__education">
+                    <h3 class="additional-info__education-header">Education</h3>
+                    <div class="additional-info__education-university">
+                      <span
+                        class="additional-info__education-university-durability"
+                        >2021</span
+                      >
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Cat track
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Binary Studio Academy
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="additional-info__languages">
+                    <h3 class="additional-info__languages-header">Languages</h3>
+                    <p class="additional-info__languages-item">Meow dialect</p>
+                    <p class="additional-info__languages-item">
+                      Ukrainian (understand)
+                    </p>
+                    <p class="additional-info__languages-item">
+                      English (don't understand)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
