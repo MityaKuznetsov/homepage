@@ -40,7 +40,9 @@ const universityDurabilityPlaceholder = document.querySelector(
 const languagesPlaceholder = document.querySelector(
   '.additional-info__languages'
 );
+const secretButton = document.querySelector('.contact-info__avatar');
 
+let roll_on = 0;
 const currentYear = new Date().getFullYear();
 const yearInMs = 3.15576e10;
 const getAge = (birthDate) =>
@@ -107,7 +109,28 @@ const displayLanguages = function (langs) {
   );
 };
 
-// Place for esater egg
+function doBarrelRoll() {
+  document.body.style.msTransform = 'rotate(360deg)';
+  document.body.style.msTransitionDuration = '4s';
+  document.body.style.msTransitionProperty = 'all';
+  document.body.style.MozTransform = 'rotate(360deg)';
+  document.body.style.MozTransitionDuration = '4s';
+  document.body.style.MozTransitionProperty = 'all';
+  document.body.style.WebkitTransform = 'rotate(360deg)';
+  document.body.style.WebkitTransitionDuration = '4s';
+  document.body.style.WebkitTransitionProperty = 'all';
+  document.body.style.OTransform = 'rotate(360deg)';
+  document.body.style.OTransitionDuration = '4s';
+  document.body.style.OTransitionProperty = 'all';
+  setTimeout("document.body.removeAttribute('style'); roll_on = 0;", 4000);
+}
+const roll = function startRoll() {
+  console.log('DO A BARREL ROLL!');
+  if (!roll_on) {
+    roll_on = 1;
+    doBarrelRoll();
+  }
+};
 
 const mitya = {
   firstName: 'Dmytro',
@@ -221,3 +244,5 @@ universitySpecialityPlaceholder.textContent = mitya.education[1]
   .toLowerCase()
   .replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
 universityDurabilityPlaceholder.textContent = mitya.education[2];
+
+secretButton.addEventListener('click', roll);
